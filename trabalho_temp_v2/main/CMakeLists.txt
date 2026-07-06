@@ -1,0 +1,11 @@
+idf_component_register(
+    SRCS
+        "main.cpp"
+        "WiFiManager.cpp"
+        "MQTTManager.cpp"
+        "DS18B20Sensor.cpp"
+        "OneWire.cpp"
+        "Digital.cpp"
+    INCLUDE_DIRS
+        "."
+)
