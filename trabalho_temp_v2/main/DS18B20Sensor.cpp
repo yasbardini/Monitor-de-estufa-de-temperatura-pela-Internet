@@ -1,42 +1,35 @@
 #include "DS18B20Sensor.h"
 
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
+#include "esp_log.h"
 
-static constexpr uint8_t DS18B20_CMD_SKIP_ROM = 0xCC;
-static constexpr uint8_t DS18B20_CMD_CONVERT_T = 0x44;
-static constexpr uint8_t DS18B20_CMD_READ_SCRATCHPAD = 0xBE;
+static const char *TAG = "DS18B20Sensor";
 
-DS18B20Sensor::DS18B20Sensor(gpio_num_t pin) : oneWire(pin) {}
-
-bool DS18B20Sensor::begin()
+DS18B20Sensor::DS18B20Sensor(gpio_num_t pin)
+    : pin(pin), sensor(pin), initialized(false)
 {
-    return oneWire.reset();
+}
+
+void DS18B20Sensor::begin()
+{
+    ESP_LOGI(TAG, "Inicializando DS18B20 no GPIO %d...", (int)pin);
+
+    sensor.init2();
+    sensor.programa();
+
+    initialized = true;
+    ESP_LOGI(TAG, "DS18B20 inicializado.");
 }
 
 float DS18B20Sensor::read()
 {
-    if (!oneWire.reset())
+    if (!initialized)
     {
-        return -127.0f;
+        ESP_LOGW(TAG, "Sensor nao inicializado. Chamando begin() automaticamente.");
+        begin();
     }
 
-    oneWire.writeByte(DS18B20_CMD_SKIP_ROM);
-    oneWire.writeByte(DS18B20_CMD_CONVERT_T);
+    float temperatura = sensor.readTemp();
+    ESP_LOGI(TAG, "Temperatura lida: %.2f", temperatura);
 
-    vTaskDelay(pdMS_TO_TICKS(800));
-
-    if (!oneWire.reset())
-    {
-        return -127.0f;
-    }
-
-    oneWire.writeByte(DS18B20_CMD_SKIP_ROM);
-    oneWire.writeByte(DS18B20_CMD_READ_SCRATCHPAD);
-
-    uint8_t tempLSB = oneWire.readByte();
-    uint8_t tempMSB = oneWire.readByte();
-
-    int16_t raw = (tempMSB << 8) | tempLSB;
-    return raw / 16.0f;
+    return temperatura;
 }

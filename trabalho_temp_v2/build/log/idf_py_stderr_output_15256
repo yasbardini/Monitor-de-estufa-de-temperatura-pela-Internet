@@ -1,0 +1,8 @@
+fatal: detected dubious ownership in repository at 'C:/Espressif/frameworks/esp-idf-v5.3.1/components/openthread/openthread'
+'C:/Espressif/frameworks/esp-idf-v5.3.1/components/openthread/openthread/.git' is owned by:
+	BUILTIN/Administradores (S-1-5-32-544)
+but the current user is:
+	JASMIM/yasmi (S-1-5-21-1262090868-1680001707-1300191704-1001)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory C:/Espressif/frameworks/esp-idf-v5.3.1/components/openthread/openthread

@@ -4,8 +4,16 @@ idf_component_register(
         "WiFiManager.cpp"
         "MQTTManager.cpp"
         "DS18B20Sensor.cpp"
-        "OneWire.cpp"
-        "Digital.cpp"
+        "DS18B20.cpp"
+        "onewire.cpp"
+        "digital.cpp"
     INCLUDE_DIRS
         "."
+    REQUIRES
+        esp_wifi
+        esp_event
+        esp_netif
+        nvs_flash
+        mqtt
+        driver
 )

@@ -4,21 +4,12 @@
 class TempSensor
 {
 public:
-    TempSensor() : fakeTemp(25.0f), direction(1.0f) {}
-
-    float read()
-    {
-        fakeTemp += direction * 0.7f;
-        if (fakeTemp >= 35.0f)
-            direction = -1.0f;
-        if (fakeTemp <= 15.0f)
-            direction = 1.0f;
-        return fakeTemp;
-    }
+    TempSensor();
+    float read();
 
 private:
-    float fakeTemp;
-    float direction;
+    float currentTemp;
+    bool rising;
 };
 
 #endif

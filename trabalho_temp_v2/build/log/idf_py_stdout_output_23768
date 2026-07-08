@@ -1,0 +1,21 @@
+[1/15] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\yasmi\Desktop\embarcados\Trabalho\trabalho_temp_v2\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.10_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/yasmi/Desktop/embarcados/Trabalho/trabalho_temp_v2/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/13] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/DS18B20Sensor.cpp.obj
+[3/13] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/digital.cpp.obj
+[4/13] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+[5/13] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/DS18B20.cpp.obj
+[6/13] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/onewire.cpp.obj
+[7/13] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/MQTTManager.cpp.obj
+[8/13] Linking C static library esp-idf\main\libmain.a
+[9/13] Generating ld/sections.ld
+[10/13] Building C object CMakeFiles/trabalho_temp_v2.elf.dir/project_elf_src_esp32.c.obj
+[11/13] Linking CXX executable trabalho_temp_v2.elf
+[12/13] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/yasmi/Desktop/embarcados/Trabalho/trabalho_temp_v2/build/trabalho_temp_v2.bin
+[13/13] cmd.exe /C "cd /D C:\Users\yasmi\Desktop\embarcados\Trabalho\trabalho_temp_v2\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.10_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/yasmi/Desktop/embarcados/Trabalho/trabalho_temp_v2/build/partition_table/partition-table.bin C:/Users/yasmi/Desktop/embarcados/Trabalho/trabalho_temp_v2/build/trabalho_temp_v2.bin"
+trabalho_temp_v2.bin binary size 0xdf2e0 bytes. Smallest app partition is 0x100000 bytes. 0x20d20 bytes (13%) free.

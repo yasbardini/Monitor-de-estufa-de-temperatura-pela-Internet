@@ -1,7 +1,12 @@
 #ifndef WIFI_MANAGER_H
 #define WIFI_MANAGER_H
 
+#include <stdint.h>
+
+#include "freertos/FreeRTOS.h"
 #include "freertos/event_groups.h"
+
+#include "esp_event.h"
 
 class WiFiManager
 {
@@ -11,10 +16,11 @@ public:
     void waitUntilConnected();
 
 private:
-    static void eventHandler(void *arg,
-                             esp_event_base_t event_base,
-                             int32_t event_id,
-                             void *event_data);
+    static void eventHandler(
+        void *arg,
+        esp_event_base_t event_base,
+        int32_t event_id,
+        void *event_data);
 
     const char *ssid;
     const char *password;

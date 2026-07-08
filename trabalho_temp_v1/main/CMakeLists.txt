@@ -3,6 +3,13 @@ idf_component_register(
         "main.cpp"
         "WiFiManager.cpp"
         "MQTTManager.cpp"
+        "TempSensor.cpp"
     INCLUDE_DIRS
         "."
+    REQUIRES
+        esp_wifi
+        esp_event
+        esp_netif
+        nvs_flash
+        mqtt
 )

@@ -1,0 +1,432 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  7 2026 21:49:00[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24f24h (151332) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=00034f4c vaddr=3ffb0000 size=03ee0h ( 16096) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=00038e34 vaddr=40080000 size=071e4h ( 29156) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9d548h (644424) map[0m
+[0;32mI (396) esp_image: segment 4: paddr=000dd570 vaddr=400871e4 size=102ach ( 66220) load[0m
+[0;32mI (433) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (434) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (454) cpu_start: Pro cpu start user code[0m
+[0;32mI (454) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (454) app_init: Application information:[0m
+[0;32mI (457) app_init: Project name:     trabalho_temp_v1[0m
+[0;32mI (463) app_init: App version:      80b8419-dirty[0m
+[0;32mI (468) app_init: Compile time:     Jul  7 2026 21:47:57[0m
+[0;32mI (474) app_init: ELF file SHA256:  91ed82324...[0m
+[0;32mI (479) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (485) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (489) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (494) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB86F0 len 00027910 (158 KiB): DRAM[0m
+[0;32mI (519) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40097490 len 00008B70 (34 KiB): IRAM[0m
+[0;32mI (539) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (546) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (560) main_task: Started on CPU0[0m
+[0;32mI (570) main_task: Calling app_main()[0m
+[0;32mI (570) MAIN: app_main iniciado.[0m
+[0;32mI (570) WiFiManager: Inicializando Wi-Fi...[0m
+[0;32mI (610) wifi:wifi driver task: 3ffc06a4, prio:23, stack:6656, core=0[0m
+[0;32mI (620) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (620) wifi:wifi certification version: v7.0[0m
+[0;32mI (620) wifi:config NVS flash: enabled[0m
+[0;32mI (620) wifi:config nano formating: disabled[0m
+[0;32mI (630) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (630) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (640) wifi:Init management short buffer num: 32[0m
+[0;32mI (640) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (640) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (650) wifi:Init static rx buffer num: 10[0m
+[0;32mI (650) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (660) wifi_init: rx ba win: 6[0m
+[0;32mI (660) wifi_init: accept mbox: 6[0m
+[0;32mI (660) wifi_init: tcpip mbox: 32[0m
+[0;32mI (670) wifi_init: udp mbox: 6[0m
+[0;32mI (670) wifi_init: tcp mbox: 6[0m
+[0;32mI (680) wifi_init: tcp tx win: 5760[0m
+[0;32mI (680) wifi_init: tcp rx win: 5760[0m
+[0;32mI (680) wifi_init: tcp mss: 1440[0m
+[0;32mI (690) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (690) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (700) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (710) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;32mI (780) wifi:mode : sta (3c:8a:1f:a1:1b:24)[0m
+[0;32mI (790) wifi:enable tsf[0m
+[0;32mI (790) WiFiManager: Aguardando conexão Wi-Fi...[0m
+[0;32mI (790) WiFiManager: Wi-Fi iniciado, tentando conectar...[0m
+[0;32mI (800) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (800) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (810) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (810) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (820) wifi:state: run -> init (0x3a0)[0m
+[0;32mI (830) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (830) WiFiManager: Wi-Fi desconectado, tentando reconectar...[0m
+[0;33mW (3250) WiFiManager: Wi-Fi desconectado, tentando reconectar...[0m
+[0;32mI (3260) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3260) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3270) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3280) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3300) wifi:connected with AP 02, aid = 78, channel 1, BW20, bssid = 54:0d:f9:14:7b:48[0m
+[0;32mI (3300) wifi:security: WPA2-PSK, phy: bgn, rssi: -65[0m
+[0;32mI (3310) wifi:pm start, type: 1[0m
+
+[0;32mI (3310) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3400) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4320) esp_netif_handlers: sta ip: 192.168.3.42, mask: 255.255.255.0, gw: 192.168.3.1[0m
+[0;32mI (4320) WiFiManager: Wi-Fi conectado! IP: 192.168.3.42[0m
+[0;32mI (4320) WiFiManager: Conexão Wi-Fi confirmada.[0m
+[0;32mI (4330) MAIN: Chamando mqtt.begin()...[0m
+[0;32mI (4330) MQTTManager: Inicializando cliente MQTT...[0m
+[0;32mI (4340) MQTTManager: Broker: mqtt://broker.emqx.io[0m
+[0;32mI (4350) MAIN: mqtt.begin() chamado com sucesso.[0m
+[0;32mI (5450) MQTTManager: MQTT conectado ao broker.[0m
+[0;32mI (5460) MQTTManager: Topicos MQTT assinados.[0m
+[0;32mI (5800) MQTTManager: Subscribe confirmado. msg_id=27058[0m
+[0;32mI (6100) MQTTManager: Subscribe confirmado. msg_id=5640[0m
+[0;32mI (6170) MQTTManager: Subscribe confirmado. msg_id=64633[0m
+[0;32mI (6270) MQTTManager: Subscribe confirmado. msg_id=1037[0m
+[0;32mI (6300) MQTTManager: Subscribe confirmado. msg_id=56347[0m
+[0;32mI (9350) MQTTManager: Temperatura atual simulada: 24.60[0m
+[0;32mI (14350) MQTTManager: Temperatura atual simulada: 25.20[0m
+[0;32mI (19350) MQTTManager: Temperatura atual simulada: 25.80[0m
+[0;32mI (24350) MQTTManager: Temperatura atual simulada: 26.40[0m
+[0;32mI (29350) MQTTManager: Temperatura atual simulada: 27.00[0m
+[0;32mI (34350) MQTTManager: Temperatura atual simulada: 27.60[0m
+[0;32mI (39350) MQTTManager: Temperatura atual simulada: 28.20[0m
+[0;32mI (40990) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (40990) MQTTManager: Topico recebido: /informa/temperaturaCorrente[0m
+[0;32mI (40990) MQTTManager: Payload recebido: (sem payload)[0m
+[0;32mI (41000) MQTTManager: Respondendo temperatura corrente: 28.80[0m
+[0;32mI (41010) MQTTManager: Publicado em /responde/temperaturaCorrente: 28.80[0m
+[0;32mI (44350) MQTTManager: Temperatura atual simulada: 29.40[0m
+[0;32mI (49350) MQTTManager: Temperatura atual simulada: 30.00[0m
+[0;33mW (49350) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (49350) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.00[0m
+[0;32mI (54350) MQTTManager: Temperatura atual simulada: 30.60[0m
+[0;33mW (54350) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (54350) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.60[0m
+[0;32mI (59350) MQTTManager: Temperatura atual simulada: 31.20[0m
+[0;33mW (59350) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (59350) MQTTManager: Publicado em /alerta/temperaturaAlta: 31.20[0m
+[0;32mI (64350) MQTTManager: Temperatura atual simulada: 30.60[0m
+[0;33mW (64350) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (64350) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.60[0m
+[0;32mI (69350) MQTTManager: Temperatura atual simulada: 30.00[0m
+[0;33mW (69350) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (69350) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.00[0m
+[0;32mI (72110) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (72120) MQTTManager: Topico recebido: /informa/temperaturaCorrente[0m
+[0;32mI (72120) MQTTManager: Payload recebido: (sem payload)[0m
+[0;32mI (72120) MQTTManager: Respondendo temperatura corrente: 29.40[0m
+[0;32mI (72130) MQTTManager: Publicado em /responde/temperaturaCorrente: 29.40[0m
+[0;32mI (74360) MQTTManager: Temperatura atual simulada: 28.80[0m
+[0;32mI (79360) MQTTManager: Temperatura atual simulada: 28.20[0m
+[0;32mI (84360) MQTTManager: Temperatura atual simulada: 27.60[0m
+[0;32mI (89360) MQTTManager: Temperatura atual simulada: 27.00[0m
+[0;32mI (94360) MQTTManager: Temperatura atual simulada: 26.40[0m
+[0;32mI (99360) MQTTManager: Temperatura atual simulada: 25.80[0m
+[0;32mI (104360) MQTTManager: Temperatura atual simulada: 25.20[0m
+[0;32mI (109360) MQTTManager: Temperatura atual simulada: 24.60[0m
+[0;32mI (114360) MQTTManager: Temperatura atual simulada: 24.00[0m
+[0;32mI (119360) MQTTManager: Temperatura atual simulada: 23.40[0m
+[0;32mI (124360) MQTTManager: Temperatura atual simulada: 22.80[0m
+[0;32mI (129360) MQTTManager: Temperatura atual simulada: 22.20[0m
+[0;32mI (134360) MQTTManager: Temperatura atual simulada: 21.60[0m
+[0;32mI (139360) MQTTManager: Temperatura atual simulada: 21.00[0m
+[0;32mI (144360) MQTTManager: Temperatura atual simulada: 20.40[0m
+[0;32mI (149360) MQTTManager: Temperatura atual simulada: 19.80[0m
+[0;33mW (149360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (149360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 19.80[0m
+[0;32mI (154360) MQTTManager: Temperatura atual simulada: 19.20[0m
+[0;33mW (154360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (154360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 19.20[0m
+[0;32mI (159360) MQTTManager: Temperatura atual simulada: 18.60[0m
+[0;33mW (159360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (159360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 18.60[0m
+[0;32mI (164360) MQTTManager: Temperatura atual simulada: 18.00[0m
+[0;33mW (164360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (164360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 18.00[0m
+[0;32mI (169360) MQTTManager: Temperatura atual simulada: 18.60[0m
+[0;33mW (169360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (169360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 18.60[0m
+[0;32mI (174360) MQTTManager: Temperatura atual simulada: 19.20[0m
+[0;33mW (174360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (174360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 19.20[0m
+[0;32mI (179360) MQTTManager: Temperatura atual simulada: 19.80[0m
+[0;33mW (179360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (179360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 19.80[0m
+[0;32mI (184360) MQTTManager: Temperatura atual simulada: 20.40[0m
+[0;32mI (189360) MQTTManager: Temperatura atual simulada: 21.00[0m
+[0;32mI (194360) MQTTManager: Temperatura atual simulada: 21.60[0m
+[0;32mI (197860) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (197860) MQTTManager: Topico recebido: /informa/temperaturaCorrente[0m
+[0;32mI (197860) MQTTManager: Payload recebido: (sem payload)[0m
+[0;32mI (197870) MQTTManager: Respondendo temperatura corrente: 22.20[0m
+[0;32mI (197880) MQTTManager: Publicado em /responde/temperaturaCorrente: 22.20[0m
+[0;32mI (199360) MQTTManager: Temperatura atual simulada: 22.80[0m
+[0;32mI (204360) MQTTManager: Temperatura atual simulada: 23.40[0m
+[0;32mI (209360) MQTTManager: Temperatura atual simulada: 24.00[0m
+[0;32mI (214360) MQTTManager: Temperatura atual simulada: 24.60[0m
+[0;32mI (219360) MQTTManager: Temperatura atual simulada: 25.20[0m
+[0;32mI (224360) MQTTManager: Temperatura atual simulada: 25.80[0m
+[0;32mI (229360) MQTTManager: Temperatura atual simulada: 26.40[0m
+[0;32mI (231350) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (231350) MQTTManager: Topico recebido: /informa/temperaturaCorrente[0m
+[0;32mI (231350) MQTTManager: Payload recebido: (sem payload)[0m
+[0;32mI (231360) MQTTManager: Respondendo temperatura corrente: 27.00[0m
+[0;32mI (231370) MQTTManager: Publicado em /responde/temperaturaCorrente: 27.00[0m
+[0;32mI (234360) MQTTManager: Temperatura atual simulada: 27.60[0m
+[0;32mI (239360) MQTTManager: Temperatura atual simulada: 28.20[0m
+[0;32mI (239950) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (239950) MQTTManager: Topico recebido: /informa/limiteAlta[0m
+[0;32mI (239950) MQTTManager: Payload recebido: (sem payload)[0m
+[0;32mI (239960) MQTTManager: Respondendo limite alto: 30.00[0m
+[0;32mI (239970) MQTTManager: Publicado em /responde/limiteAlta: 30.00[0m
+[0;32mI (244360) MQTTManager: Temperatura atual simulada: 28.80[0m
+[0;32mI (249360) MQTTManager: Temperatura atual simulada: 29.40[0m
+[0;32mI (252440) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (252440) MQTTManager: Topico recebido: /informa/limiteBaixa[0m
+[0;32mI (252440) MQTTManager: Payload recebido: (sem payload)[0m
+[0;32mI (252450) MQTTManager: Respondendo limite baixo: 20.00[0m
+[0;32mI (252460) MQTTManager: Publicado em /responde/limiteBaixa: 20.00[0m
+[0;32mI (254360) MQTTManager: Temperatura atual simulada: 30.00[0m
+[0;33mW (254360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (254360) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.00[0m
+[0;32mI (259360) MQTTManager: Temperatura atual simulada: 30.60[0m
+[0;33mW (259360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (259360) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.60[0m
+[0;32mI (264360) MQTTManager: Temperatura atual simulada: 31.20[0m
+[0;33mW (264360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (264360) MQTTManager: Publicado em /alerta/temperaturaAlta: 31.20[0m
+[0;32mI (269360) MQTTManager: Temperatura atual simulada: 30.60[0m
+[0;33mW (269360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (269360) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.60[0m
+[0;32mI (274360) MQTTManager: Temperatura atual simulada: 30.00[0m
+[0;33mW (274360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (274360) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.00[0m
+[0;32mI (279360) MQTTManager: Temperatura atual simulada: 29.40[0m
+[0;32mI (284360) MQTTManager: Temperatura atual simulada: 28.80[0m
+[0;32mI (288590) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (288590) MQTTManager: Topico recebido: /configura/alta[0m
+[0;32mI (288590) MQTTManager: Payload recebido: 26[0m
+[0;32mI (288600) MQTTManager: Novo limite alto: 26.00[0m
+[0;32mI (288610) MQTTManager: Publicado em /responde/limiteAlta: 26.00[0m
+[0;32mI (289360) MQTTManager: Temperatura atual simulada: 28.20[0m
+[0;33mW (289360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (289360) MQTTManager: Publicado em /alerta/temperaturaAlta: 28.20[0m
+[0;32mI (294360) MQTTManager: Temperatura atual simulada: 27.60[0m
+[0;33mW (294360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (294360) MQTTManager: Publicado em /alerta/temperaturaAlta: 27.60[0m
+[0;32mI (299360) MQTTManager: Temperatura atual simulada: 27.00[0m
+[0;33mW (299360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (299360) MQTTManager: Publicado em /alerta/temperaturaAlta: 27.00[0m
+[0;32mI (304360) MQTTManager: Temperatura atual simulada: 26.40[0m
+[0;33mW (304360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (304360) MQTTManager: Publicado em /alerta/temperaturaAlta: 26.40[0m
+[0;32mI (309360) MQTTManager: Temperatura atual simulada: 25.80[0m
+[0;32mI (314360) MQTTManager: Temperatura atual simulada: 25.20[0m
+[0;32mI (319360) MQTTManager: Temperatura atual simulada: 24.60[0m
+[0;32mI (320750) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (320750) MQTTManager: Topico recebido: /configura/alta[0m
+[0;32mI (320750) MQTTManager: Payload recebido: 33[0m
+[0;32mI (320760) MQTTManager: Novo limite alto: 33.00[0m
+[0;32mI (320770) MQTTManager: Publicado em /responde/limiteAlta: 33.00[0m
+[0;32mI (324360) MQTTManager: Temperatura atual simulada: 24.00[0m
+[0;32mI (329360) MQTTManager: Temperatura atual simulada: 23.40[0m
+[0;32mI (331600) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (331600) MQTTManager: Topico recebido: /configura/baixa[0m
+[0;32mI (331600) MQTTManager: Payload recebido: 22[0m
+[0;32mI (331610) MQTTManager: Novo limite baixo: 22.00[0m
+[0;32mI (331610) MQTTManager: Publicado em /responde/limiteBaixa: 22.00[0m
+[0;32mI (334360) MQTTManager: Temperatura atual simulada: 22.80[0m
+[0;32mI (339360) MQTTManager: Temperatura atual simulada: 22.20[0m
+[0;32mI (342450) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (342450) MQTTManager: Topico recebido: /configura/baixa[0m
+[0;32mI (342450) MQTTManager: Payload recebido: 15[0m
+[0;32mI (342460) MQTTManager: Novo limite baixo: 15.00[0m
+[0;32mI (342470) MQTTManager: Publicado em /responde/limiteBaixa: 15.00[0m
+[0;32mI (344360) MQTTManager: Temperatura atual simulada: 21.60[0m
+[0;32mI (349360) MQTTManager: Temperatura atual simulada: 21.00[0m
+[0;32mI (354230) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (354230) MQTTManager: Topico recebido: /informa/limiteAlta[0m
+[0;32mI (354230) MQTTManager: Payload recebido: (sem payload)[0m
+[0;32mI (354240) MQTTManager: Respondendo limite alto: 33.00[0m
+[0;32mI (354250) MQTTManager: Publicado em /responde/limiteAlta: 33.00[0m
+[0;32mI (354360) MQTTManager: Temperatura atual simulada: 20.40[0m
+[0;32mI (359360) MQTTManager: Temperatura atual simulada: 19.80[0m
+[0;32mI (364360) MQTTManager: Temperatura atual simulada: 19.20[0m
+[0;32mI (365810) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (365810) MQTTManager: Topico recebido: /informa/limiteBaixa[0m
+[0;32mI (365810) MQTTManager: Payload recebido: (sem payload)[0m
+[0;32mI (365810) MQTTManager: Respondendo limite baixo: 15.00[0m
+[0;32mI (365820) MQTTManager: Publicado em /responde/limiteBaixa: 15.00[0m
+[0;32mI (369360) MQTTManager: Temperatura atual simulada: 18.60[0m
+[0;32mI (374360) MQTTManager: Temperatura atual simulada: 18.00[0m
+[0;32mI (379360) MQTTManager: Temperatura atual simulada: 18.60[0m
+[0;32mI (384360) MQTTManager: Temperatura atual simulada: 19.20[0m
+[0;32mI (389360) MQTTManager: Temperatura atual simulada: 19.80[0m
+[0;32mI (394360) MQTTManager: Temperatura atual simulada: 20.40[0m
+[0;32mI (399360) MQTTManager: Temperatura atual simulada: 21.00[0m
+[0;32mI (400410) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (400410) MQTTManager: Topico recebido: /configura/baixa[0m
+[0;32mI (400410) MQTTManager: Payload recebido: 20[0m
+[0;32mI (400420) MQTTManager: Novo limite baixo: 20.00[0m
+[0;32mI (400430) MQTTManager: Publicado em /responde/limiteBaixa: 20.00[0m
+[0;32mI (404360) MQTTManager: Temperatura atual simulada: 21.60[0m
+[0;32mI (409220) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (409220) MQTTManager: Topico recebido: /configura/alta[0m
+[0;32mI (409220) MQTTManager: Payload recebido: 25[0m
+[0;32mI (409230) MQTTManager: Novo limite alto: 25.00[0m
+[0;32mI (409230) MQTTManager: Publicado em /responde/limiteAlta: 25.00[0m
+[0;32mI (409360) MQTTManager: Temperatura atual simulada: 22.20[0m
+[0;32mI (414360) MQTTManager: Temperatura atual simulada: 22.80[0m
+[0;32mI (419360) MQTTManager: Temperatura atual simulada: 23.40[0m
+[0;32mI (424360) MQTTManager: Temperatura atual simulada: 24.00[0m
+[0;32mI (429360) MQTTManager: Temperatura atual simulada: 24.60[0m
+[0;32mI (434360) MQTTManager: Temperatura atual simulada: 25.20[0m
+[0;33mW (434360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (434360) MQTTManager: Publicado em /alerta/temperaturaAlta: 25.20[0m
+[0;32mI (439360) MQTTManager: Temperatura atual simulada: 25.80[0m
+[0;33mW (439360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (439360) MQTTManager: Publicado em /alerta/temperaturaAlta: 25.80[0m
+[0;32mI (444360) MQTTManager: Temperatura atual simulada: 26.40[0m
+[0;33mW (444360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (444360) MQTTManager: Publicado em /alerta/temperaturaAlta: 26.40[0m
+[0;32mI (447310) MQTTManager: Mensagem MQTT recebida.[0m
+[0;32mI (447310) MQTTManager: Topico recebido: /configura/baixa[0m
+[0;32mI (447310) MQTTManager: Payload recebido: 22[0m
+[0;32mI (447320) MQTTManager: Novo limite baixo: 22.00[0m
+[0;32mI (447330) MQTTManager: Publicado em /responde/limiteBaixa: 22.00[0m
+[0;32mI (449360) MQTTManager: Temperatura atual simulada: 27.00[0m
+[0;33mW (449360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (449360) MQTTManager: Publicado em /alerta/temperaturaAlta: 27.00[0m
+[0;32mI (454360) MQTTManager: Temperatura atual simulada: 27.60[0m
+[0;33mW (454360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (454360) MQTTManager: Publicado em /alerta/temperaturaAlta: 27.60[0m
+[0;32mI (459360) MQTTManager: Temperatura atual simulada: 28.20[0m
+[0;33mW (459360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (459360) MQTTManager: Publicado em /alerta/temperaturaAlta: 28.20[0m
+[0;32mI (464360) MQTTManager: Temperatura atual simulada: 28.80[0m
+[0;33mW (464360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (464360) MQTTManager: Publicado em /alerta/temperaturaAlta: 28.80[0m
+[0;32mI (469360) MQTTManager: Temperatura atual simulada: 29.40[0m
+[0;33mW (469360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (469360) MQTTManager: Publicado em /alerta/temperaturaAlta: 29.40[0m
+[0;32mI (474360) MQTTManager: Temperatura atual simulada: 30.00[0m
+[0;33mW (474360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (474360) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.00[0m
+[0;32mI (479360) MQTTManager: Temperatura atual simulada: 30.60[0m
+[0;33mW (479360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (479360) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.60[0m
+[0;32mI (484360) MQTTManager: Temperatura atual simulada: 31.20[0m
+[0;33mW (484360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (484360) MQTTManager: Publicado em /alerta/temperaturaAlta: 31.20[0m
+[0;32mI (489360) MQTTManager: Temperatura atual simulada: 30.60[0m
+[0;33mW (489360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (489360) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.60[0m
+[0;32mI (494360) MQTTManager: Temperatura atual simulada: 30.00[0m
+[0;33mW (494360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (494360) MQTTManager: Publicado em /alerta/temperaturaAlta: 30.00[0m
+[0;32mI (499360) MQTTManager: Temperatura atual simulada: 29.40[0m
+[0;33mW (499360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (499360) MQTTManager: Publicado em /alerta/temperaturaAlta: 29.40[0m
+[0;32mI (504360) MQTTManager: Temperatura atual simulada: 28.80[0m
+[0;33mW (504360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (504360) MQTTManager: Publicado em /alerta/temperaturaAlta: 28.80[0m
+[0;32mI (509360) MQTTManager: Temperatura atual simulada: 28.20[0m
+[0;33mW (509360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (509360) MQTTManager: Publicado em /alerta/temperaturaAlta: 28.20[0m
+[0;32mI (514360) MQTTManager: Temperatura atual simulada: 27.60[0m
+[0;33mW (514360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (514360) MQTTManager: Publicado em /alerta/temperaturaAlta: 27.60[0m
+[0;32mI (519360) MQTTManager: Temperatura atual simulada: 27.00[0m
+[0;33mW (519360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (519360) MQTTManager: Publicado em /alerta/temperaturaAlta: 27.00[0m
+[0;32mI (524360) MQTTManager: Temperatura atual simulada: 26.40[0m
+[0;33mW (524360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (524360) MQTTManager: Publicado em /alerta/temperaturaAlta: 26.40[0m
+[0;32mI (529360) MQTTManager: Temperatura atual simulada: 25.80[0m
+[0;33mW (529360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (529360) MQTTManager: Publicado em /alerta/temperaturaAlta: 25.80[0m
+[0;32mI (534360) MQTTManager: Temperatura atual simulada: 25.20[0m
+[0;33mW (534360) MQTTManager: Temperatura acima do limite alto.[0m
+[0;32mI (534360) MQTTManager: Publicado em /alerta/temperaturaAlta: 25.20[0m
+[0;32mI (539360) MQTTManager: Temperatura atual simulada: 24.60[0m
+[0;32mI (544360) MQTTManager: Temperatura atual simulada: 24.00[0m
+[0;32mI (549360) MQTTManager: Temperatura atual simulada: 23.40[0m
+[0;32mI (554360) MQTTManager: Temperatura atual simulada: 22.80[0m
+[0;32mI (559360) MQTTManager: Temperatura atual simulada: 22.20[0m
+[0;32mI (564360) MQTTManager: Temperatura atual simulada: 21.60[0m
+[0;33mW (564360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (564360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 21.60[0m
+[0;32mI (569360) MQTTManager: Temperatura atual simulada: 21.00[0m
+[0;33mW (569360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (569360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 21.00[0m
+[0;32mI (574360) MQTTManager: Temperatura atual simulada: 20.40[0m
+[0;33mW (574360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (574360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 20.40[0m
+[0;32mI (579360) MQTTManager: Temperatura atual simulada: 19.80[0m
+[0;33mW (579360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (579360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 19.80[0m
+[0;32mI (584360) MQTTManager: Temperatura atual simulada: 19.20[0m
+[0;33mW (584360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (584360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 19.20[0m
+[0;32mI (589360) MQTTManager: Temperatura atual simulada: 18.60[0m
+[0;33mW (589360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (589360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 18.60[0m
+[0;32mI (594360) MQTTManager: Temperatura atual simulada: 18.00[0m
+[0;33mW (594360) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (594360) MQTTManager: Publicado em /alerta/temperaturaBaixa: 18.00[0m
+[0;32mI (599370) MQTTManager: Temperatura atual simulada: 18.60[0m
+[0;33mW (599370) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (599370) MQTTManager: Publicado em /alerta/temperaturaBaixa: 18.60[0m
+[0;32mI (604370) MQTTManager: Temperatura atual simulada: 19.20[0m
+[0;33mW (604370) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (604370) MQTTManager: Publicado em /alerta/temperaturaBaixa: 19.20[0m
+[0;32mI (609370) MQTTManager: Temperatura atual simulada: 19.80[0m
+[0;33mW (609370) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (609370) MQTTManager: Publicado em /alerta/temperaturaBaixa: 19.80[0m
+[0;32mI (614370) MQTTManager: Temperatura atual simulada: 20.40[0m
+[0;33mW (614370) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (614370) MQTTManager: Publicado em /alerta/temperaturaBaixa: 20.40[0m
+[0;32mI (619370) MQTTManager: Temperatura atual simulada: 21.00[0m
+[0;33mW (619370) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (619370) MQTTManager: Publicado em /alerta/temperaturaBaixa: 21.00[0m
+[0;32mI (624370) MQTTManager: Temperatura atual simulada: 21.60[0m
+[0;33mW (624370) MQTTManager: Temperatura abaixo do limite baixo.[0m
+[0;32mI (624370) MQTTManager: Publicado em /alerta/temperaturaBaixa: 21.60[0m
+[0;32mI (629370) MQTTManager: Temperatura atual simulada: 22.20[0m
+[0;32mI (634370) MQTTManager: Temperatura atual simulada: 22.80[0m
+[0;32mI (639370) MQTTManager: Temperatura atual simulada: 23.40[0m
+[0;32mI (644370) MQTTManager: Temperatura atual simulada: 24.00[0m
+[0;32mI (649370) MQTTManager: Temperatura atual simulada: 24.60[0m
