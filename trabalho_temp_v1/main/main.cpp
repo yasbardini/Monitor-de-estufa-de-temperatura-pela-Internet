@@ -9,8 +9,8 @@
 
 static const char *TAG = "MAIN";
 
-static const char *WIFI_SSID = "AP 02";
-static const char *WIFI_PASS = "jardimdasavenidas";
+static const char *WIFI_SSID = "NICANDA";
+static const char *WIFI_PASS = "Nicole2005!";
 static const char *MQTT_BROKER = "mqtt://broker.emqx.io";
 
 extern "C" void app_main(void)
