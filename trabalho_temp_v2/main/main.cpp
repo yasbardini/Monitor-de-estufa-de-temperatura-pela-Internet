@@ -15,7 +15,7 @@ static const char *MQTT_BROKER = "mqtt://broker.emqx.io"; // endereço do broker
 static const gpio_num_t DS18B20_GPIO = GPIO_NUM_16; // pino 16 conectado no sensor
 
 extern "C" void app_main(void) // função principal do programa, idf foi escrita em c mas o código ta em c++
-{git status
+{
     ESP_LOGI(TAG, "app_main iniciado."); // imprime mensagem de log
 
     WiFiManager wifi(WIFI_SSID, WIFI_PASS); // cria objeto wifi com 
